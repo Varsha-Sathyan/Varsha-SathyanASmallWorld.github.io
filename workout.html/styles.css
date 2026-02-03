@@ -1,0 +1,36 @@
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  width: 100%;
+  position: fixed; /* Makes the navbar stick to the top */
+  top: 0;
+  background-color: transparent; /* Initial transparent background */
+  transition: background-color 0.5s ease-in-out; /* Smooth transition for the color change */
+  padding: 15px; /* Add padding as needed */
+  z-index: 99;
+}
+
+.navbar.scrolled {
+  background-color: #000; /* Solid color when scrolled (change to your desired color) */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: adds a subtle shadow */
+}
+
+/* Add other styling for links, text color, etc. */
+.navbar a {
+  color: black; /* Initial text color (adjust as needed) */
+  text-decoration: none;
+  padding: 10px 15px;
+}
+.navbar.scrolled a {
+    color: white; /* Text color when scrolled (adjust as needed) */
+}
+
+main {
+  height: 200vh; /* Ensures the page is scrollable */
+  padding-top: 60px; /* Prevents content from being hidden behind the fixed navbar */
+}

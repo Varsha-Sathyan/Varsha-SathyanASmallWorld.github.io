@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1 id="head1" class="hclass">HTML</h1>
+    <h1 class="hclass">JAVA</h1>
+    <h1  class="hclass">PYTHON</h1>
+    <p id="new"></p>
+
+    <h2>JavaScript HTML DOM</h2>
+
+    <div id="main">
+            <p>Finding HTML Elements by Tag Name</p>
+            <p>This example demonstrates the <b>getElementsByTagName</b> method.</p>
+    </div>
+
+<p id="demo"></p>
+
+
+    <script>
+       const mypara = document.getElementById("head1");
+       mypara.innerHTML = "welcome";
+
+       const x = document.getElementById("main");
+       const y = x.getElementsByTagName("p");
+
+       document.getElementById("demo").innerHTML='The first paragraph (index 0) inside "main" is:' +y[0].innerHTML;
+    </script>
+     -->
+
+
+        <h1>javascript events</h1>
+        <h2>the addEventListner()method</h2>
+
+        <button id="mybtn">time is?</button>
+        <p id="demo"></p>
+
+    <script>
+        let btn =document.getElementById("mybtn");
+
+        btn.addEventListener("click",function(){
+            document.getElementById("demo").innerHTML=Date();
+        });
+
+    </script>
+
+<h1>javascript events</h1>
+<h2>the mouseover and mousoutEvents</h2>
+
+<div id="box" style="width: 300px;height: 200px; border: 2px solid #000; padding: 16px; background-color: aqua;">mouseover this box</div>
+<p id="demo"></p>
+
+<script>
+    let box = document.getElementById("box");
+    box.addEventListener("mouseover",function(){
+        box.innerHTML="mouse over me";
+        box.style.backgroundColor='red';
+    });
+
+    box.addEventListener("mouseout",function(){
+        box.innerHTML="mouse is out";
+    })
+</script>
+
+</body>
+</html>

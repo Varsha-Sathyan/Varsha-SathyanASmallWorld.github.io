@@ -1,0 +1,80 @@
+.carosel{
+    margin: 100px auto;
+    width: 90%;
+    border: 5px solid  rgb(198, 198, 102);
+    display: flex;
+    overflow-x: auto;
+    gap: 1em;
+    background-color: rgb(198, 198, 102);
+}
+.carosel::-webkit-scrollbar{
+    display: none;
+}
+.group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    animation: spin 10s infinite linear;
+}
+.card{
+    flex: 0 0 5em;
+    height: 5em;
+    padding: 1em;
+    background-color: rgb(28, 158, 169);
+    border-radius: 1em;
+    font-size: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes spin{
+    from {translate: 0;}
+    to {translate: -100%;}
+}
+/*next slideshow*/
+.maindiv{
+    width: 100%;
+    background-color:rgba(242, 223, 203);
+    margin: 0;
+    padding: 0;
+    font-family: "NeueHaasUnicaLight", helvetica, arial, sans-serif;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.container-fluid{
+ 
+ width: 90%;
+ height: 10vw;
+ display: flex;
+ overflow-x: auto;
+ gap: 5px;
+ background-color: rgba(242, 223, 203);
+}
+.container-fluid::-webkit-scrollbar{
+    display: none ;
+}
+.group1{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    animation: spin 30s infinite linear;
+}
+.brand{
+    flex: 0 0 2em;
+    height: 1em;
+    padding: 1em;
+    background-color:  rgba(242, 223, 203);
+    border-radius: 1em;
+    font-size: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+/*third section*/
+#btn{
+    background-color: black;
+    color: aliceblue;
+}
